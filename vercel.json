@@ -1,6 +1,10 @@
 {
-  "buildCommand": "npm install --force && npm install @rollup/wasm-node --force && npm run build",
+  "buildCommand": "npm install --force && npm run build",
   "framework": "vite",
   "outputDirectory": "dist",
-  "installCommand": "npm install --force"
+  "installCommand": "npm install --force",
+  "env": {
+    "ROLLUP_WASM": "true",
+    "NODE_OPTIONS": "--no-warnings"
+  }
 } 
