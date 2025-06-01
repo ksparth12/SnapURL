@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npm install --force && NODE_OPTIONS='--max_old_space_size=4096' npm run build",
+  "buildCommand": "npm install && NODE_OPTIONS='--max_old_space_size=4096' npm run build",
   "framework": "vite",
   "outputDirectory": "dist",
-  "installCommand": "npm install --force",
+  "installCommand": "npm install",
   "env": {
     "ROLLUP_WASM": "true",
     "NODE_OPTIONS": "--no-warnings",
