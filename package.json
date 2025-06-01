@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node build.js",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -81,8 +81,8 @@
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
   },
-  "resolutions": {
-    "rollup": "npm:@rollup/wasm-node"
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.40.1"
   },
   "overrides": {
     "rollup": "npm:@rollup/wasm-node"
